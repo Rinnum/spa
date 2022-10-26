@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Test</title>
+		<script charset="utf-8">
+			fetch("/count")
+				.then(resp=>resp.text())
+				.then(txt=>document.querySelector('#count').innerText = txt)
+		</script>
+	</head>
+	<body>
+		<h1>This site have been visited</h1>
+		<h2 id='count'>loading</h2>
+		<h3>times!</h3>
+	</body>
+</html>
